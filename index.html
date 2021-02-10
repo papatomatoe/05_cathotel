@@ -1,284 +1,325 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>main-page</title>
 </head>
+
 <body>
   <header class="page-header">
-    <img class="logo" src="img/logo.svg" alt="logo">
-  <nav class="main-menu">
-<ul class="main-menu__list">
-  <li class="main-menu__item"><a href="#" class="main-menu__link">
-Почему мы?
-  </a></li>
-  <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">
-Номера
-  </a></li>
-  <li class="main-menu__item"><a class="main-menu__link" href="#">
-Отзывы
-  </a></li>
-  <li class="main-menu__item"><a class="main-menu__link" href="#">
-Как нас найти
-  </a></li>
-</ul>
-  </nav>
-  <p class="page-header__location page-header__location--small">
-    Санкт-Петербург
-  </p>
-  <p class="page-header__title page-header__title--bold page-header__title--big">
-Котейка
-  </p>
-  <p class="page-header__description">
-    Уютная гостиница для котов и кошек
-  </p>
-  <button class="btn page-header__btn btn page-header__btn--bc-white">
-    <span class="btn page-header__text">
-Забронировать
-    </span>
-    
-      <img class="btn page-header__btn-image" src="img/paw.svg" alt="cat paw">
-    
-  </button>
+    <nav class="main-menu">
+      <a class="main-menu__link-img" href="index.html">
+        <img class="logo" src="img/logo.svg" alt="logo">
+      </a>
+      <ul class="main-menu__list">
+        <li class="main-menu__item"><a href="#" class="main-menu__link">
+            Почему мы?
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">
+            Номера
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Отзывы
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Как нас найти
+          </a></li>
+      </ul>
+    </nav>
   </header>
-  <main>
-<section class="section why us">
-  <h2 class="section__title section__title--big">
-    Почему мы?
-  </h2>
-  <div>
-    <ul class="list-advantage">
-      <li class="list-advantage__item">
-        <div class="list-advantage__container"><img class="list-advantage__image" src="img/temperature.svg" alt="temperature">
-        <h3 class="list-advantage__title">
-          Комфортная температура
-        </h3>
-      <p class="list-advantage__text">
-        Во всех номерах поддерживается комфортная температура в пределах
-23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру. 
-      </p></div>
-      </li>
-      <li class="list-advantage__item">
-        <div class="list-advange__container"><img class="list-advantage__image" src="img/camera.svg" alt="camera">
-        <h3 class="list-advantage__title">
-          Видеонаблюдение
-        </h3>
-      <p class="list-advantage__text">
-        Мы предоставляем доступ в нашу систему. Вы сможете следить
-        за своим питомцем со своего смартфона или компьютера.
-      </p></div>
-      </li>
-      <li class="list-advantage__item">
-        <div class="list-advantage__title"><img class="list-advantage__image" src="img/car.svg" alt="car">
-        <h3 class="list-advantage__title">Услуги Зоотакси
-        </h3>
-      <p class="list-advantage__text">
-        Мы приедем за вашим питомцем в любой район Санкт-Петербурга.
-      </p></div>
-      </li>
-      <li class="list-adventage__item">
-        <div class="list-adventage__container"><img class="list-advantage__image" src="img/bowl.svg" alt="bowl">
-        <h3 class="list-advantage__title">
-          Сбалансированное питание
-        </h3>
-      <p class="list-advantage__text">
-        Вы можете привезти свой корм
-        или доверить рацион своего
-        питомца нашим профессионалам.
-      </p></div>
-      </li>
-      <li class="list-advantage__item">
-        <div class="list-advantage__container"><img class="list-advantage__image" src="img/cat.svg" alt="cat">
-        <h3 class="list-advantage__title">
-          Ежедневные прогулки
-        </h3>
-      <p class="list-advantage__text">
-        По вашему желанию мы выгуливаем вашего питомца два раза в день
-на специализированной закрытой территории.        
-      </p></div>
-      </li>
-      <li class="list-advantage__item">
-        <div class="list-advantage__container"><img class="list-advantage__image" src="img/hand.svg" alt="hand">
-        <h3 class="list-advatage__title">
-          Лучшие ветеринары
-        </h3>
-      <p class="list-advantage__text">
-        В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.
-      </p></div>
-      </li>
-    </ul>
-  </div>
-
-</section>
-<section class="section-rooms">
-<h2 class="section__title section__title--big">
-  Номера
-</h2>
-<h3 class="section-rooms__title">
-Эконом плюс
-</h3>
-<img src="img/cat1.jpg">
-<div class="section-rooms__container">
-<ul class="section-rooms__list">
-<li class="section-rooms__item">
-  Площадь - 0,90 м2
-</li>
-<li class="section-rooms__item">
-  Размеры (ШхГхВ) — 90х100х180 см
-</li>
-<li class="section-rooms__item">
-  Цена за сутки: 200₽
-</li>
-</ul>
-<button class="btn section-rooms__btn btn section-rooms__btn--bc-orange">
-  <span class="btn section-rooms__text">
-Забронировать
-  </span>
-  
-<img class="section-rooms__btn image" src="img/paw2.svg" alt="cat paw">
-</button>
-</div>
-<input class="spec__radio" type="radio" name="item">
-<input class="spec__radio" type="radio" name="item">
-<input class="spec__radio" type="radio" name="item">
-<p class="section__arrow"><a class="section__arrow section__arrow--left" href="#">
-  left
-</a>
-<a class="section__arrow section__arrow-right" href="#">
-  right
-</a>
-            
-</p>
-</section>
-<section class="section-comments">
-<h2 class="section__title section__title--big">
-Отзывы
-</h2>
-<ul class="section-comments__list">
-  <li class="section-comments__item">
-    <div class="section-comments__container">
-    <img class="section-comments__img" src="img/symbol.svg" alt="apostrophe">
-    <p class="section-comments__text">
-      Первый раз пришлось оставить нашего котика
-    в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует.
-    И мы и котик остались очень довольны!
-    </p>
-    <p class="section-comments__sender section-comments__sender--small section-comments__sender--gray">
-      Валерия Гришаева
-    </p>
-    <p class="section-comments__data section-comments__data--small section-comments__data--gray">
-      15 марта, 2020
-    </p>
-    </div>
-    </li>
-    <li class="section-comments__item">
-      <div class="section-comments__container">
-      <img class="section-comments__img" src="img/symbol.svg" alt="apostrophe">
-      <p class="section-comments__text">
-        Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.
+  <main class="page-main">
+    <h1 class="page-main__title">
+      главная страница сайта котейка
+    </h1>
+    <section class="section-banner">
+      <h2 class="section-banner__title">
+        банер на сайте котейка
+      </h2>
+      <p class="section-banner__location section-banner__location--small">
+        Санкт-Петербург
       </p>
-      <p class="section-comments__sender section-comments__sender--small section-comments__sender--gray">
-        Екатерина Минаева
+      <p class="section-banner__title section-banner__title--bold section-banner__title--big">
+        Котейка
       </p>
-      <p class="section-comments__data section-comments__data--small section-comments__data--gray">
-        10 марта, 2020
+      <p class="section-banner__description">
+        Уютная гостиница для котов и кошек
       </p>
+      <a class="section-banner section-banner--bc-white" href="catalog.html">
+        <span class="section-banner__text">
+          Забронировать
+        </span>
+        <img class="section-banner__image" src="img/paw.svg" alt="cat paw">
+      </a>
+    </section>
+    <section class="section-why-us">
+      <h2 class="section-why-us__title section-why-us__title--big">
+        Почему мы?
+      </h2>
+      <div>
+        <ul class="list-advantage">
+          <li class="list-advantage__item">
+            <div class="list-advantage__container"><img class="list-advantage__image" src="img/temperature.svg"
+                alt="temperature">
+              <h3 class="list-advantage__title">
+                Комфортная температура
+              </h3>
+              <p class="list-advantage__text">
+                Во всех номерах поддерживается комфортная температура в пределах
+                23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру.
+              </p>
+            </div>
+          </li>
+          <li class="list-advantage__item">
+            <div class="list-advantage__container"><img class="list-advantage__image" src="img/camera.svg" alt="camera">
+              <h3 class="list-advantage__title">
+                Видеонаблюдение
+              </h3>
+              <p class="list-advantage__text">
+                Мы предоставляем доступ в нашу систему. Вы сможете следить
+                за своим питомцем со своего смартфона или компьютера.
+              </p>
+            </div>
+          </li>
+          <li class="list-advantage__item">
+            <div class="list-advantage__title"><img class="list-advantage__image" src="img/car.svg" alt="car">
+              <h3 class="list-advantage__title">Услуги Зоотакси
+              </h3>
+              <p class="list-advantage__text">
+                Мы приедем за вашим питомцем в любой район Санкт-Петербурга.
+              </p>
+            </div>
+          </li>
+          <li class="list-advantage__item">
+            <div class="list-advantage__container"><img class="list-advantage__image" src="img/bowl.svg" alt="bowl">
+              <h3 class="list-advantage__title">
+                Сбалансированное питание
+              </h3>
+              <p class="list-advantage__text">
+                Вы можете привезти свой корм
+                или доверить рацион своего
+                питомца нашим профессионалам.
+              </p>
+            </div>
+          </li>
+          <li class="list-advantage__item">
+            <div class="list-advantage__container"><img class="list-advantage__image" src="img/cat.svg" alt="cat">
+              <h3 class="list-advantage__title">
+                Ежедневные прогулки
+              </h3>
+              <p class="list-advantage__text">
+                По вашему желанию мы выгуливаем вашего питомца два раза в день
+                на специализированной закрытой территории.
+              </p>
+            </div>
+          </li>
+          <li class="list-advantage__item">
+            <div class="list-advantage__container"><img class="list-advantage__image" src="img/hand.svg" alt="hand">
+              <h3 class="list-advantage__title">
+                Лучшие ветеринары
+              </h3>
+              <p class="list-advantage__text">
+                В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
-      </li>
-      <li class="section-comments__item">
-        <div class="section-comments__container">
-        <img class="section-comments__img" src="img/symbol.svg" alt="apostrophe">
-        <p class="section-comments__text">
-          Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно. 
-        </p>
-        <p class="section-comments__sender section-comments__sender--small section-comments__sender--gray">
-          Павел Нечаев
-        </p>
-        <p class="section-comments__data section-comments__data--small section-comments__data--gray">
-          10 марта, 2020
-        </p>
-        </div>
-        </li>
-</ul>
-<input class="btn__switch" type="radio">
-<input class="btn__switch" type="radio">
-<input class="btn__switch" type="radio">
-<a class="section__arrow section__arrow--left" href="#">
-  left
-</a>
-<a class="section__arrow section__arrow-right" href="#">
-  right
-</a>
-</section>
-<section class="section-contact">
-  <div class="section-contact__container">
-  
-<h2 class="section-contact__title">
-  Как нас найти
-</h2>
-<h3 class="section-contact__subitem">
-  Адрес
-</h3>
-<p class="section-contact__text">
-  Санкт-Петербург,
-ул Большая Конюшенная, д 19
-</p>
-<h3 class="section-contact__subitem">
-  Режим работы
-</h3>
-<p class="section-contact__text">
-  Ежедневно, с 9:00 до 20:00
-</p>
-<h3 class="section-contact__subitem">
-Телефон
-</h3>
-<p class="section-contact__text">
-  8 (800) 333-55-99
-</p>
-<h3 class="section-contact__subitem">
-  E-mail
-</h3>
-<p class="section-contact__text">
-  info@cat-hotel.ru
-</p>
-<h3 class="section-contact__subitem">
-  Социальный сети
-</h3>
-<img class="section-contact__img" src="img/Group 47.svg" alt="facebook">
-<img class="section-contact__img" src="img/Group 46.svg" alt="instagram">
-<img class="section-contact__img" src="img/wk.svg" alt="wk">
 
-</div>
-<img class="section-contact__map" src="img/map.jpg" alt="map"> 
-<img class="section-contact__marker" src="img/cat3.svg" alt="marker">
-</section>
-</main>
+    </section>
+    <section class="section-rooms">
+      <h2 class="section-rooms__title section-rooms__title--big">
+        Номера
+      </h2>
+      <h3 class="section-rooms__title">
+        Эконом плюс
+      </h3>
+      <img class="section-rooms__img" src="img/cat1.jpg" alt="cat">
+      <div class="section-rooms__container">
+        <ul class="section-rooms__list">
+          <li class="section-rooms__item">
+            Площадь - 0,90 м2
+          </li>
+          <li class="section-rooms__item">
+            Размеры (ШхГхВ) — 90х100х180 см
+          </li>
+          <li class="section-rooms__item">
+            Цена за сутки: 200₽
+          </li>
+        </ul>
+        <button class="btn section-rooms__btn btn section-rooms__btn--bc-orange">
+          <span class="btn section-rooms__text">
+            Забронировать
+          </span>
+
+          <img class="section-rooms__btn image" src="img/paw2.svg" alt="cat paw">
+        </button>
+      </div>
+      <input class="spec__radio" type="radio" name="item">
+      <input class="spec__radio" type="radio" name="item">
+      <input class="spec__radio" type="radio" name="item">
+      <div class="arrow">
+        <a class="arrow arrow--left" href="#">
+          left
+        </a>
+        <a class="arrow arrow-right" href="#">
+          right
+        </a>
+      </div>
+    </section>
+    <section class="section-comments">
+      <h2 class="section-comments__title section-comments__title--big">
+        Отзывы
+      </h2>
+      <ul class="section-comments__list">
+        <li class="section-comments__item">
+          <div class="section-comments__container">
+            <img class="section-comments__img" src="img/symbol.svg" alt="apostrophe">
+            <p class="section-comments__text">
+              Первый раз пришлось оставить нашего котика
+              в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца,
+              рассказывала, как он себя чувствует.
+              И мы и котик остались очень довольны!
+            </p>
+            <p class="section-comments__sender section-comments__sender--small section-comments__sender--gray">
+              Валерия Гришаева
+            </p>
+            <p class="section-comments__data section-comments__data--small section-comments__data--gray">
+              марта, <time>2020</time>
+            </p>
+          </div>
+        </li>
+        <li class="section-comments__item">
+          <div class="section-comments__container">
+            <img class="section-comments__img" src="img/symbol.svg" alt="apostrophe">
+            <p class="section-comments__text">
+              Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В
+              “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться
+              еще.
+            </p>
+            <p class="section-comments__sender section-comments__sender--small section-comments__sender--gray">
+              Екатерина Минаева
+            </p>
+            <p class="section-comments__data section-comments__data--small section-comments__data--gray">
+              10 марта, <time>2020</time>
+            </p>
+          </div>
+        </li>
+        <li class="section-comments__item">
+          <div class="section-comments__container">
+            <img class="section-comments__img" src="img/symbol.svg" alt="apostrophe">
+            <p class="section-comments__text">
+              Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и
+              “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.
+            </p>
+            <p class="section-comments__sender section-comments__sender--small section-comments__sender--gray">
+              Павел Нечаев
+            </p>
+            <p class="section-comments__data section-comments__data--small section-comments__data--gray">
+              марта, <time>2020</time>
+            </p>
+          </div>
+        </li>
+      </ul>
+      <input class="btn__switch" type="radio">
+      <input class="btn__switch" type="radio">
+      <input class="btn__switch" type="radio">
+      <div class="arrow">
+        <a class="arrow arrow--left" href="#">
+          left
+        </a>
+        <a class="arrow arrow-right" href="#">
+          right
+        </a>
+      </div>
+    </section>
+    <section class="section-contact">
+      <div class="section-contact__container">
+
+        <h2 class="section-contact__title">
+          Как нас найти
+        </h2>
+        <h3 class="section-contact__subitem">
+          Адрес
+        </h3>
+        <p class="section-contact__text">
+          Санкт-Петербург,
+          ул Большая Конюшенная, д 19
+        </p>
+        <h3 class="section-contact__subitem">
+          Режим работы
+        </h3>
+        <p class="section-contact__text">
+          Ежедневно, с 9:00 до 20:00
+        </p>
+        <h3 class="section-contact__subitem">
+          Телефон
+        </h3>
+        <a class="section-contact__phone" href="tel:88003335599">
+          <p class="section-contact__text">
+            8 (800) 333-55-99
+          </p>
+        </a>
+        <h3 class="section-contact__subitem">
+          E-mail
+        </h3>
+        <a class="section-contact__email-link" href="mailto:info@cat-hotel.ru">
+          <p class="section-contact__text">
+            info@cat-hotel.ru
+          </p>
+        </a>
+        <h3 class="section-contact__subitem">
+          Социальный сети
+        </h3>
+        <ul class="section-contact__list">
+          <li class="section-contact__item">
+            <a class="section-contact__facebook-link" href="#">
+              <img class="section-contact__img" src="img/Group-47.svg" alt="facebook">
+            </a>
+          </li>
+          <li class="section-contact__item">
+            <a class="section-contact__instagram-link" href="#">
+              <img class="section-contact__img" src="img/Group-46.svg" alt="instagram">
+            </a>
+          </li>
+          <li class="section-contact__item">
+            <a class="section-contact__vk-link" href="#">
+              <img class="section-contact__img" src="img/vk.svg" alt="vk">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <img class="section-contact__map" src="img/map.jpg" alt="map">
+      <img class="section-contact__marker" src="img/cat3.svg" alt="marker">
+    </section>
+  </main>
   <footer class="page-footer">
     <img class="logo" src="img/logo.svg" alt="logo">
-  <nav class="main-menu">
-<ul class="main-menu__list">
-  <li class="main-menu__item"><a href="#" class="main-menu__link">
-Почему мы?
-  </a></li>
-  <li class="main-menu__item"><a class="main-menu__link" href="#">
-Номера
-  </a></li>
-  <li class="main-menu__item"><a class="main-menu__link" href="#">
-Отзывы
-  </a></li>
-  <li class="main-menu__item"><a class="main-menu__link" href="#">
-Как нас найти
-  </a></li>
-</ul>
-  </nav>
-  <p class="footer__text footer__text--gray footer__text--small">
-    <img class="footer__img" src="img/Vector.svg" alt="symbol">
-    2020 Все права защищены
-  </p>
-  <p class="footer__text footer__text--gray footer__text--small">
-    Политика конфиденциальности
-  </p>
+    <nav class="main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item"><a href="#" class="main-menu__link">
+            Почему мы?
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Номера
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Отзывы
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Как нас найти
+          </a></li>
+      </ul>
+    </nav>
+    <p class="page-footer__text page-footer__text--gray page-footer__text--small">
+      <img class="page-footer__img" src="img/Vector.svg" alt="symbol">
+      2020 Все права защищены
+    </p>
+    <p class="page-footer__text page-footer__text--gray page-footer__text--small">
+      Политика конфиденциальности
+    </p>
   </footer>
 </body>
+
 </html>

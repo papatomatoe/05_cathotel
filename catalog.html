@@ -1,205 +1,435 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>catalog</title>
 </head>
+
 <body>
   <header class="page-header">
-    <img class="logo" src="img/logo.svg" alt="logo">
     <nav class="main-menu">
-  <ul class="main-menu__list">
-    <li class="main-menu__item"><a href="#" class="main-menu__link">
-  Почему мы?
-    </a></li>
-    <li class="main-menu__item"><a class="main-menu__link" href="#">
-  Номера
-    </a></li>
-    <li class="main-menu__item"><a class="main-menu__link" href="#">
-  Отзывы
-    </a></li>
-    <li class="main-menu__item"><a class="main-menu__link" href="#">
-  Как нас найти
-    </a></li>
-  </ul>
+      <a class="main-menu__link-img" href="index.html">
+        <img class="logo" src="img/logo.svg" alt="logo">
+      </a>
+      <ul class="main-menu__list">
+        <li class="main-menu__item"><a href="#" class="main-menu__link">
+            Почему мы?
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Номера
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Отзывы
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Как нас найти
+          </a></li>
+      </ul>
     </nav>
   </header>
   <main class="page-main">
-    <section class="section-main">
-<h1 class="section-main__text">
-  Наши номера
-</h1>
-<div class="section-main__filter">
-<h2 class="filter__cost">
-  Цена за сутки,₽
-</h2>
-<input class="filter__input" type="text">
-<input class="filter__input" type="text">
-<h2 class="filter__title-space">
-  Площадь
-</h2>
-  <p class="filter__number">
-    <input type="checkbox" class="filter__checkbox" id="1"> 0,63 м2
-  </p>
-  <p class="filter__number">
-    <input type="checkbox" class="filter__checkbox" id="2"> 0,90 м2
-  </p>
-  <p class="filter__number">
-    <input type="checkbox" class="filter__checkbox" id="3"> 1,13 м2
-  </p>
-  <p class="filter__number">
-    <input type="checkbox" class="filter__checkbox" id="4"> 1.56 м2
-  </p>
-  <p class="filter__number">
-    <input type="checkbox" class="filter__checkbox" id="5"> 2,56 м2
-  </p>
-  <p class="filter__number">
-    <input type="checkbox" class="filter__checkbox" id="6"> 2,88 м2
-  </p>
-  <h2 class="filter__title-equipment">
-    Оснащение номера
-  </h2>
-  <p class="filter__text">
-    <input type="checkbox" class="filter__checkbox" id="7"> Пустой номер
-  </p>
-  <p class="filter__text">
-    <input type="checkbox" class="filter__checkbox" id="8"> Лежак
-  </p>
-  <p class="filter__text">
-    <input type="checkbox" class="filter__checkbox" id="9"> Когтеточка
-  </p>
-  <p class="filter__text">
-    <input type="checkbox" class="filter__checkbox" id="10"> Игровой-комплекс
-  </p>
-  <p class="filter__text">
-    <input type="checkbox" class="filter__checkbox" id="11"> Домик 
-  </p>
-<button class="filter__btn">
-  Сбросить фильтр
-</button>
-</div>
-<div class="section-main__rooms">
-<ul class="section-main__list">
-<li class="section-main__item">
-<img class="section-main" src="img/cat4.jpg">
-<h2 class="item__title">
-Эконом
-</h2>
-<p class="item__text">
-  Размеры (ШхГхВ) - 90х70х180 см
-</p>
-<p class="item__text">
-  Площадь - 0,63 м2
-</p>
-<p class="item__text">
-  Оснащение номера <img class="item__img" src="img/barrier.svg"> <span class="item__prompt">
-Пустой номер
-  </span>
-</p>
-<p class="item__text">
-  Цена за сутки:
-<span class="item__cost item__cost--bold">
-  100₽
-</span>
-</p>
-<button class="item__btn">
-  <span class="btn section-main__text">
-    Забронировать
-      </span>
-      
-    <img class="section-main__btn image" src="img/paw2.svg" alt="cat paw">
-</button>
-</li>
-<li class="section-main__item">
-  <img class="section-main" src="img/cat5.jpg">
-  <h2 class="item__title">
-  Эконом плюс
-  </h2>
-  <p class="item__text">
-    Размеры (ШхГхВ) - 90х100х180 см
-  </p>
-  <p class="item__text">
-    Площадь - 0,90 м2
-  </p>
-  <p class="item__text">
-    Оснащение номера <img class="item__img" src="img/sunbed.svg">  <img class="item__img" src="img/scratching post.svg">
-  </p>
-  <p class="item__text">
-    Цена за сутки:
-  <span class="item__cost item__cost--bold">
-    200₽
-  </span>
-  </p>
-  <button class="item__btn">
-    <span class="btn section-main__text">
-      Забронировать
+    <h1 class="page-main__title">
+      страница каталога на сайте котейка
+    </h1>
+    <section class="section-filter">
+      <h2 class="section-filter__text">
+        Наши номера
+      </h2>
+      <form class="filter">
+
+        <fieldset class="filter__fieldset">
+          <legend>
+            <h3 class="filter__cost">
+              Цена за сутки,₽
+            </h3>
+          </legend>
+          <label>
+            <input class="filter__input" type="number">
+          </label>
+          <label>
+            <input class="filter__input" type="number">
+          </label>
+        </fieldset>
+        <fieldset class="filter__fieldset">
+          <legend>
+            <h3 class="filter__title-space">
+              Площадь
+            </h3>
+          </legend>
+          <p class="filter__number">
+            <label>
+              <input type="checkbox" class="filter__checkbox" name="0,63">
+            </label>
+            0,63 м2
+          </p>
+
+          <p class="filter__number">
+            <label>
+              <input type="checkbox" class="filter__checkbox" name="0,90">
+            </label>
+            0,90 м2
+          </p>
+          <p class="filter__number">
+            <label>
+              <input type="checkbox" class="filter__checkbox" name="1,13">
+            </label> 1,13 м2
+          </p>
+          <p class="filter__number">
+            <label>
+              <input type="checkbox" class="filter__checkbox" name="1,56">
+            </label>
+            1,56 м2
+          </p>
+          <p class="filter__number">
+            <label>
+              <input type="checkbox" class="filter__checkbox" name="2,56">
+            </label>
+            2,56 м2
+          </p>
+          <p class="filter__number">
+            <label>
+              <input type="checkbox" class="filter__checkbox" name="2,88">
+            </label>
+            2,88 м2
+          </p>
+        </fieldset>
+        <fieldset class="filter__fieldset">
+          <h2 class="filter__title-equipment">
+            Оснащение номера
+          </h2>
+          <p class="filter__text">
+            <label>
+              <input type="checkbox" class="filter__checkbox" name="empty-room">
+            </label>
+            Пустой номер
+          </p>
+          <p class="filter__text">
+            <label>
+              <input type="checkbox" class="filter__checkbox" name="sunbed">
+            </label>
+            Лежак
+          </p>
+          <p class="filter__text">
+            <label>
+              <input type="checkbox" class="filter__checkbox" name="scratching-post">
+            </label>
+            Когтеточка
+          </p>
+          <p class="filter__text">
+            <label>
+              <input type="checkbox" class="filter__checkbox" name="game-complex">
+            </label>
+            Игровой-комплекс
+          </p>
+          <p class="filter__text">
+            <label>
+              <input type="checkbox" class="filter__checkbox" name="house">
+            </label>
+            Домик
+          </p>
+        </fieldset>
+
+        <button class="filter__btn" type="reset">
+          Сбросить фильтр
+        </button>
+      </form>
+    </section>
+    <section class="section-rooms">
+      <div class="section-rooms__container">
+        <ul class="section-rooms__list">
+          <li class="section-rooms__item">
+            <img class="section-rooms" src="img/cat4.jpg" alt="cat">
+            <h2 class="item__title">
+              Эконом
+            </h2>
+            <p class="item__text">
+              Размеры (ШхГхВ) - 90х70х180 см
+            </p>
+            <p class="item__text">
+              Площадь - 0,63 м2
+            </p>
+            <p class="item__text">
+              Оснащение номера <img class="item__img" src="img/barrier.svg" alt="nothing"> <span class="item__prompt">
+                Пустой номер
+              </span>
+            </p>
+            <p class="item__text">
+              Цена за сутки:
+              <span class="item__cost item__cost--bold">
+                100₽
+              </span>
+            </p>
+            <button class="item__btn">
+              <span class="btn section-rooms__text">
+                Забронировать
+              </span>
+
+              <img class="section-rooms__btn image" src="img/paw2.svg" alt="cat paw">
+            </button>
+          </li>
+          <li class="section-rooms__item">
+            <img class="section-rooms" src="img/cat5.jpg" alt="cat">
+            <h2 class="item__title">
+              Эконом плюс
+            </h2>
+            <p class="item__text">
+              Размеры (ШхГхВ) - 90х100х180 см
+            </p>
+            <p class="item__text">
+              Площадь - 0,90 м2
+            </p>
+            <p class="item__text">
+              Оснащение номера <img class="item__img" src="img/sunbed.svg" alt="sunbed">
+              <img class="item__img" src="img/scratchingpost.svg" alt="scratching post">
+            </p>
+            <p class="item__text">
+              Цена за сутки:
+              <span class="item__cost item__cost--bold">
+                200₽
+              </span>
+            </p>
+            <button class="item__btn">
+              <span class="btn section-rooms__text">
+                Забронировать
+              </span>
+
+              <img class="section-rooms__btn image" src="img/paw2.svg" alt="cat paw">
+            </button>
+          </li>
+          <li class="section-rooms__item">
+            <img class="section-rooms" src="img/cat6.jpg" alt="cat">
+            <h2 class="item__title">
+              Комфорт
+            </h2>
+            <p class="item__text">
+              Размеры (ШхГхВ) - 90х100х180 см
+            </p>
+            <p class="item__text">
+              Площадь - 1,13 м2
+            </p>
+            <p class="item__text">
+              Оснащение номера <img class="item__img" src="img/sunbed.svg" alt="sunbed">
+              <img class="item__img" src="img/scratchingpost.svg" alt="scratching post">
+              <img class="item__img" src="img/tangle.svg" alt="tangle">
+              <span class="item__prompt">
+                Игровой комплекс
+              </span>
+            </p>
+            <p class="item__text">
+              Цена за сутки:
+              <span class="item__cost item__cost--bold">
+                250₽
+              </span>
+            </p>
+            <button class="item__btn">
+              <span class="btn section-rooms__text">
+                Забронировать
+              </span>
+
+              <img class="section-rooms__btn image" src="img/paw2.svg" alt="cat paw">
+            </button>
+          </li>
+          <li class="section-rooms__item">
+            <img class="section-rooms" src="img/cat7.jpg" alt="cat">
+            <h2 class="item__title">
+              Сьют
+            </h2>
+            <p class="item__text">
+              Размеры (ШхГхВ) - 125х125х180 см
+            </p>
+            <p class="item__text">
+              Площадь - 1,56 м2
+            </p>
+            <p class="item__text">
+              Оснащение номера <img class="item__img" src="img/sunbed.svg" alt="sunbed">
+              <img class="item__img" src="img/scratchingpost.svg" alt="scratching post">
+              <img class="item__img" src="img/tangle.svg" alt="tangle">
+            </p>
+            <p class="item__text">
+              Цена за сутки:
+              <span class="item__cost item__cost--bold">
+                350₽
+              </span>
+            </p>
+            <button class="item__btn">
+              <span class="btn section-rooms__text">
+                Забронировать
+              </span>
+
+              <img class="section-rooms__btn image" src="img/paw2.svg" alt="cat paw">
+            </button>
+          </li>
+          <li class="section-rooms__item">
+            <img class="section-rooms" src="img/cat8.jpg" alt=cat>
+            <h2 class="item__title">
+              Люкс
+            </h2>
+            <p class="item__text">
+              Размеры (ШхГхВ) - 160х160х180 см
+            </p>
+            <p class="item__text">
+              Площадь - 2,56 м2
+            </p>
+            <p class="item__text">
+              Оснащение номера
+              <img class="item__img" src="img/sunbed.svg" alt="sunbed">
+              <img class="item__img" src="img/scratchingpost.svg" alt="scratching post">
+              <img class="item__img" src="img/tangle.svg" alt="tangle">
+              <img class="item__img" src="img/house.svg" alt="house">
+            </p>
+            <p class="item__text">
+              Цена за сутки:
+              <span class="item__cost item__cost--bold">
+                500₽
+              </span>
+            </p>
+            <button class="item__btn">
+              <span class="btn section-rooms__text">
+                Забронировать
+              </span>
+              <img class="section-rooms__btn image" src="img/paw2.svg" alt="cat paw">
+            </button>
+          </li>
+          <li class="section-rooms__item">
+            <img class="section-rooms" src="img/cat9.jpg" alt="cat">
+            <h2 class="item__title">
+              Супер-Люкс
+            </h2>
+            <p class="item__text">
+              Размеры (ШхГхВ) - 180х160х180 см
+            </p>
+            <p class="item__text">
+              Площадь - 2,88 м2
+            </p>
+            <p class="item__text">
+              Оснащение номера <img class="item__img" src="img/sunbed.svg" alt="sunbed">
+              <img class="item__img" src="img/scratchingpost.svg" alt="scratching post">
+              <img class="item__img" src="img/tangle.svg" alt="tangle">
+              <img class="item__img" src="img/house.svg" alt="house">
+            </p>
+            <p class="item__text">
+              Цена за сутки:
+              <span class="item__cost item__cost--bold">
+                600₽
+              </span>
+            </p>
+            <button class="item__btn">
+              <span class="btn section-rooms__text">
+                Забронировать
+              </span>
+
+              <img class="section-rooms__btn image" src="img/paw2.svg" alt="cat paw">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section-event">
+      <h2 class="section-event__title">
+        <span class="section-event__container section-event__container--small section-event__container--bold">Каждый 7-й
+          день</span><br>
+        <span
+          class="section-event__container section-event__container--big section-event__container--bold">бесплатно!</span><br>
+      </h2>
+      <p class="section-event__text">
+        Акция действует при размещении
+        в номерах “Люкс” и “Супер-Люкс”
+      </p>
+      <button class="btn section-event__btn btn section-event__btn--bc-white">
+        <span class="btn section-event__text">
+          Забронировать
         </span>
-        
-      <img class="section-main__btn image" src="img/paw2.svg" alt="cat paw">
-  </button>
-  </li>
-  <li class="section-main__item">
-    <img class="section-main" src="img/cat6.jpg"> 
-    <h2 class="item__title">
-      Комфорт 
-    </h2>
-    <p class="item__text">
-      Размеры (ШхГхВ) - 90х100х180 см
-    </p>
-    <p class="item__text">
-      Площадь - 1,13 м2
-    </p>
-    <p class="item__text">
-      Оснащение номера <img class="item__img" src="img/sunbed.svg"> <img class="item__img" src="img/scratching post.svg"> <img class="item__img" src="img/tangle.svg"> <span class="item__prompt">
-        Игровой комплекс
-      </span>
-    </p>
-    <p class="item__text">
-      Цена за сутки:
-    <span class="item__cost item__cost--bold">
-      250₽
-    </span>
-    </p>
-    <button class="item__btn">
-      <span class="btn section-main__text">
-        Забронировать
-          </span>
-          
-        <img class="section-main__btn image" src="img/paw2.svg" alt="cat paw">
-    </button>
-  </li>
-  <li class="section-main__item">
-    <img class="section-main" src="img/cat7.jpg"> 
-    <h2 class="item__title">
-      Сьют 
-    </h2>
-    <p class="item__text">
-      Размеры (ШхГхВ) - 125х125х180 см
-    </p>
-    <p class="item__text">
-      Площадь - 1,56 м2
-    </p>
-    <p class="item__text">
-      Оснащение номера <img class="item__img" src="img/sunbed.svg"> <img class="item__img" src="img/scratching post.svg"> <img class="item__img" src="img/tangle.svg"> 
-    </p>
-    <p class="item__text">
-      Цена за сутки:
-    <span class="item__cost item__cost--bold">
-      350₽
-    </span>
-    </p>
-    <button class="item__btn">
-      <span class="btn section-main__text">
-        Забронировать
-          </span>
-          
-        <img class="section-main__btn image" src="img/paw2.svg" alt="cat paw">
-    </button>
-  </li>
-</ul>
-</div>
-</section>
+        <img class="btn section-event__btn-image" src="img/paw.svg" alt="cat paw">
+      </button>
+    </section>
+    <section class="section-contact">
+      <div class="section-contact__container">
+
+        <h2 class="section-contact__title">
+          Как нас найти
+        </h2>
+        <h3 class="section-contact__subitem">
+          Адрес
+        </h3>
+        <p class="section-contact__text">
+          Санкт-Петербург,
+          ул Большая Конюшенная, д 19
+        </p>
+        <h3 class="section-contact__subitem">
+          Режим работы
+        </h3>
+        <p class="section-contact__text">
+          Ежедневно, с 9:00 до 20:00
+        </p>
+        <h3 class="section-contact__subitem">
+          Телефон
+        </h3>
+        <a class="section-contact__phone" href="tel:88003335599">
+          <p class="section-contact__text">
+            8 (800) 333-55-99
+          </p>
+        </a>
+        <h3 class="section-contact__subitem">
+          E-mail
+        </h3>
+        <a class="section-contact__email-link" href="mailto:info@cat-hotel.ru">
+          <p class="section-contact__text">
+            info@cat-hotel.ru
+          </p>
+        </a>
+        <h3 class="section-contact__subitem">
+          Социальный сети
+        </h3>
+        <ul class="section-contact__list">
+          <li class="section-contact__item">
+            <a class="section-contact__facebook-link" href="#">
+              <img class="section-contact__img" src="img/Group-47.svg" alt="facebook">
+            </a>
+          </li>
+          <li class="section-contact__item">
+            <a class="section-contact__instagram-link" href="#">
+              <img class="section-contact__img" src="img/Group-46.svg" alt="instagram">
+            </a>
+          </li>
+          <li class="section-contact__item">
+            <a class="section-contact__vk-link" href="#">
+              <img class="section-contact__img" src="img/vk.svg" alt="vk">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <img class="section-contact__map" src="img/map.jpg" alt="map">
+      <img class="section-contact__marker" src="img/cat3.svg" alt="marker">
+    </section>
   </main>
+  <footer class="page-footer">
+    <img class="logo" src="img/logo.svg" alt="logo">
+    <nav class="main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item"><a href="#" class="main-menu__link">
+            Почему мы?
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Номера
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Отзывы
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Как нас найти
+          </a></li>
+      </ul>
+    </nav>
+    <p class="page-footer__text page-footer__text--gray page-footer__text--small">
+      <img class="page-footer__img" src="img/Vector.svg" alt="symbol">
+      2020 Все права защищены
+    </p>
+    <p class="page-footer__text page-footer__text--gray page-footer__text--small">
+      Политика конфиденциальности
+    </p>
+  </footer>
 </body>
+
 </html>
