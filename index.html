@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="main-menu">
+      <a class="main-menu__link-img">
+        <img class="logo" src="img/logo.svg" alt="Логотип">
+      </a>
+      <ul class="main-menu__list">
+        <li class="main-menu__item"><a href="#" class="main-menu__link">
+            Почему мы?
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">
+            Номера
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Отзывы
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Как нас найти
+          </a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="page-main__title">
+      главная страница сайта котейка
+    </h1>
+    <section class="banner">
+      <h2 class="banner__title">
+        банер на сайте котейка
+      </h2>
+      <p class="banner__location banner__location--small">
+        Санкт-Петербург
+      </p>
+      <p class="banner__title banner__title--bold banner__title--big">
+        Котейка
+      </p>
+      <p class="banner__description">
+        Уютная гостиница для котов и кошек
+      </p>
+      <a class="banner banner--bc-white" href="catalog.html">
+        <span class="banner__text">
+          Забронировать
+        </span>
+        <img class="banner__image" src="img/paw.svg" alt="">
+      </a>
+    </section>
+    <section class="about-us">
+      <h2 class="about-us__title about-us__title--big">
+        Почему мы?
+      </h2>
+      <div>
+        <ul class="list-advantage">
+          <li class="list-advantage__item">
+            <div class="list-advantage__container">
+              <img class="list-advantage__image" src="img/temperature.svg" alt="температура">
+              <h3 class="list-advantage__title">
+                Комфортная температура
+              </h3>
+              <p class="list-advantage__text">
+                Во всех номерах поддерживается комфортная температура в пределах
+                23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру.
+              </p>
+            </div>
+          </li>
+          <li class="list-advantage__item">
+            <div class="list-advantage__container">
+              <img class="list-advantage__image" src="img/camera.svg" alt="камера">
+              <h3 class="list-advantage__title">
+                Видеонаблюдение
+              </h3>
+              <p class="list-advantage__text">
+                Мы предоставляем доступ в нашу систему. Вы сможете следить
+                за своим питомцем со своего смартфона или компьютера.
+              </p>
+            </div>
+          </li>
+          <li class="list-advantage__item">
+            <div class="list-advantage__title">
+              <img class="list-advantage__image" src="img/car.svg" alt="машина такси">
+              <h3 class="list-advantage__title">Услуги Зоотакси
+              </h3>
+              <p class="list-advantage__text">
+                Мы приедем за вашим питомцем в любой район Санкт-Петербурга.
+              </p>
+            </div>
+          </li>
+          <li class="list-advantage__item">
+            <div class="list-advantage__container">
+              <img class="list-advantage__image" src="img/bowl.svg" alt="Миска с едой">
+              <h3 class="list-advantage__title">
+                Сбалансированное питание
+              </h3>
+              <p class="list-advantage__text">
+                Вы можете привезти свой корм
+                или доверить рацион своего
+                питомца нашим профессионалам.
+              </p>
+            </div>
+          </li>
+          <li class="list-advantage__item">
+            <div class="list-advantage__container">
+              <img class="list-advantage__image" src="img/cat.svg" alt="кот">
+              <h3 class="list-advantage__title">
+                Ежедневные прогулки
+              </h3>
+              <p class="list-advantage__text">
+                По вашему желанию мы выгуливаем вашего питомца два раза в день
+                на специализированной закрытой территории.
+              </p>
+            </div>
+          </li>
+          <li class="list-advantage__item">
+            <div class="list-advantage__container">
+              <img class="list-advantage__image" src="img/hand.svg" alt="рука">
+              <h3 class="list-advantage__title">
+                Лучшие ветеринары
+              </h3>
+              <p class="list-advantage__text">
+                В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+    <section class="rooms">
+      <h2 class="rooms__title rooms__title--big">
+        Номера
+      </h2>
+      <h3 class="rooms__title">
+        Эконом плюс
+      </h3>
+      <img class="rooms__img" src="img/cat1.jpg" alt="кот">
+      <div class="rooms__container">
+        <ul class="rooms__list">
+          <li class="rooms__item">
+            Площадь - 0,90 м2
+          </li>
+          <li class="rooms__item">
+            Размеры (ШхГхВ) — 90х100х180 см
+          </li>
+          <li class="rooms__item">
+            Цена за сутки: 200₽
+          </li>
+        </ul>
+        <button class="btn rooms__btn btn rooms__btn--bc-orange">
+          <span class="btn rooms__text">
+            Забронировать
+          </span>
+          <img class="rooms__btn image" src="img/paw2.svg" alt="">
+        </button>
+      </div>
+      <input class="rooms__radio" type="radio" name="item">
+      <input class="rooms__radio" type="radio" name="item">
+      <input class="rooms__radio" type="radio" name="item">
+      <div class="arrow">
+        <a class="arrow arrow--left" href="#">
+          left
+        </a>
+        <a class="arrow arrow-right" href="#">
+          right
+        </a>
+      </div>
+    </section>
+    <section class="comments">
+      <h2 class="comments__title comments__title--big">
+        Отзывы
+      </h2>
+      <ul class="comments__list">
+        <li class="comments__item">
+          <div class="comments__container">
+            <img class="comments__img" src="img/symbol.svg" alt="">
+            <p class="comments__text">
+              Первый раз пришлось оставить нашего котика
+              в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца,
+              рассказывала, как он себя чувствует.
+              И мы и котик остались очень довольны!
+            </p>
+            <p class="comments__sender comments__sender--small comments__sender--gray">
+              Валерия Гришаева
+            </p>
+            <p class="comments__data comments__data--small comments__data--gray">
+              <time datetime="2020-03-15">15 марта, 2020</time>
+            </p>
+          </div>
+        </li>
+        <li class="comments__item">
+          <div class="comments__container">
+            <img class="comments__img" src="img/symbol.svg" alt="">
+            <p class="comments__text">
+              Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В
+              “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться
+              еще.
+            </p>
+            <p class="comments__sender comments__sender--small comments__sender--gray">
+              Екатерина Минаева
+            </p>
+            <p class="comments__data comments__data--small comments__data--gray">
+              <time datetime="2020-03-10">10 марта, >2020</time>
+            </p>
+          </div>
+        </li>
+        <li class="comments__item">
+          <div class="comments__container">
+            <img class="comments__img" src="img/symbol.svg" alt="">
+            <p class="comments__text">
+              Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и
+              “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.
+            </p>
+            <p class="comments__sender comments__sender--small comments__sender--gray">
+              Павел Нечаев
+            </p>
+            <p class="comments__data comments__data--small comments__data--gray">
+              <time datetime="2019-12-02">2 декабря, 2019</time>
+            </p>
+          </div>
+        </li>
+      </ul>
+      <input class="comments__switch" type="radio">
+      <input class="comments__switch" type="radio">
+      <input class="comments__switch" type="radio">
+      <div class="arrow">
+        <a class="arrow arrow--left" href="#">
+          left
+        </a>
+        <a class="arrow arrow-right" href="#">
+          right
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <section class="contact">
+      <div class="contact__container">
+        <h2 class="contact__title">
+          Как нас найти
+        </h2>
+        <ul class="contact__list">
+          <li class="contact__item">
+            <h3 class="contact__subitem">
+              Адрес
+            </h3>
+            <p class="contact__text">
+              Санкт-Петербург,
+              ул Большая Конюшенная, д 19
+            </p>
+          </li>
+          <li class="contact__item">
+            <h3 class="contact__subitem">
+              Режим работы
+            </h3>
+            <p class="contact__text">
+              Ежедневно, с 9:00 до 20:00
+            </p>
+          </li>
+          <li class="contact__item">
+            <h3 class="contact__subitem">
+              Телефон
+            </h3>
+            <a class="contact__phone" href="tel:88003335599">
+              <p class="contact__text">
+                8 (800) 333-55-99
+              </p>
+            </a>
+          </li>
+          <li class="contact__item">
+            <h3 class="contact__subitem">
+              E-mail
+            </h3>
+            <a class="contact__email-link" href="mailto:info@cat-hotel.ru">
+              <p class="contact__text">
+                info@cat-hotel.ru
+              </p>
+            </a>
+          </li>
+          <li class="contact__item">
+            <h3 class="contact__subitem">
+              Социальный сети
+            </h3>
+            <ul class="contact__socialNetwork-list">
+              <li class="contact__socialNetwork-item">
+                <a class="contact__facebook-link" href="#">
+                  <img class="contact__img" src="img/Group-47.svg" alt="facebook">
+                </a>
+              </li>
+              <li class="contact__socialNetwork-item">
+                <a class="contact__instagram-link" href="#">
+                  <img class="contact__img" src="img/Group-46.svg" alt="instagram">
+                </a>
+              </li>
+              <li class="contact__socialNetwork-item">
+                <a class="contact__vk-link" href="#">
+                  <img class="contact__img" src="img/vk.svg" alt="vk">
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <img class="contact__map" src="img/map.jpg" alt="map">
+      <img class="contact__marker" src="img/cat3.svg" alt="marker">
+    </section>
+    <a class="page-footer__link-img" href="index.html">
+      <img class="logo" src="img/logo.svg" alt="Логотип">
+    </a>
+    <nav class="main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a href="#" class="main-menu__link">
+            Почему мы?
+          </a>
+        </li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Номера
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Отзывы
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Как нас найти
+          </a></li>
+      </ul>
+    </nav>
+    <p class="page-footer__text page-footer__text--gray page-footer__text--small">
+      &copy;2020 Все права защищены
+    </p>
+    <p class="page-footer__text page-footer__text--gray page-footer__text--small">
+      Политика конфиденциальности
+    </p>
+  </footer>
+</body>
+
+</html>

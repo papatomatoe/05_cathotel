@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="main-menu">
+      <a class="main-menu__link-img" href="index.html">
+        <img class="logo" src="img/logo.svg" alt="Логотип">
+      </a>
+      <ul class="main-menu__list">
+        <li class="main-menu__item"><a href="#" class="main-menu__link">
+            Почему мы?
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Номера
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Отзывы
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Как нас найти
+          </a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="page-main__title">
+      Страница каталога на сайте "котейка"
+    </h1>
+    <section class="filter">
+      <h2 class="filter__text">
+        Наши номера
+      </h2>
+      <form class="filter__form">
+
+        <fieldset class="filter__fieldset">
+          <legend class="filter__cost">
+            Цена за сутки,₽
+          </legend>
+          <label>
+            <input class="filter__input" type="number" min="100" placeholder="от 100" max="600" step="1">
+          </label>
+          <label>
+            <input class="filter__input" type="number" placeholder="до 600" min="100" max="600" step="1">
+          </label>
+        </fieldset>
+        <fieldset class="filter__fieldset">
+          <legend class="filter__title-space">
+            Площадь
+          </legend>
+          <ul class="filter__number-list">
+            <li class="filter__item">
+              <label>
+                <input type="checkbox" class="filter__checkbox" name="verySmall">
+                <span class="filter__number">0,63 м2</span>
+              </label>
+            </li>
+            <li class="filter__item">
+              <label>
+                <input type="checkbox" class="filter__checkbox" name="small">
+                <span class="filter__number">0,90 м2</span>
+              </label>
+            </li>
+            <li class="filter__item">
+              <label>
+                <input type="checkbox" class="filter__checkbox" name="medium">
+                <span class="filter__number">1,13 м2</span>
+              </label>
+            </li>
+            <li class="filter__item">
+              <label>
+                <input type="checkbox" class="filter__checkbox" name="big">
+                <span class="filter__number">1,56 м2</span>
+              </label>
+            </li>
+            <li class="filter__item">
+              <label>
+                <input type="checkbox" class="filter__checkbox" name="veryBig">
+                <span class="filter__number">2,56 м2</span>
+              </label>
+            </li>
+            <li class="filter__item">
+              <label>
+                <input type="checkbox" class="filter__checkbox" name="ultraBig">
+                <span class="filter__number">2,88 м2</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter__fieldset">
+          <legend class="filter__title-equipment">
+            Оснащение номера
+          </legend>
+          <ul class="filter__text-list">
+            <li class="filter__item">
+              <label>
+                <input type="checkbox" class="filter__checkbox" name="empty-room">
+                <span class="filter__text">Пустой номер</span>
+              </label>
+            </li>
+            <li class="filter__item">
+              <label>
+                <input type="checkbox" class="filter__checkbox" name="sunbed">
+                <span class="filter__text">Лежак</span>
+              </label>
+            </li>
+            <li class="filter__item">
+              <label>
+                <input type="checkbox" class="filter__checkbox" name="scratching-post">
+                <span class="filter__text">Когтеточка</span>
+              </label>
+            </li>
+            <li class="filter__item">
+              <label>
+                <input type="checkbox" class="filter__checkbox" name="game-complex">
+                <span class="filter__text">Игровой-комплекс</span>
+              </label>
+            </li>
+            <li class="filter__item">
+              <label>
+                <input type="checkbox" class="filter__checkbox" name="house">
+                <span class="filter__text">Домик</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="filter__btn" type="reset">
+          Сбросить фильтр
+        </button>
+      </form>
+    </section>
+    <section class="rooms">
+      <h2 class="rooms__title">
+        Комнаты
+      </h2>
+      <div class="rooms__container">
+        <ul class="rooms__list">
+          <li class="rooms__item">
+            <img class="rooms" src="img/cat4.jpg" alt="кот">
+            <h2 class="rooms__title">
+              Эконом
+            </h2>
+            <ul class="rooms__parameters-list">
+              <li class="rooms__parameters-item">
+                <span class="rooms__label">
+                  Размеры (ШхГхВ) -
+                </span>
+                <span class="rooms__value">
+                  90х70х180
+                </span>
+              </li>
+              <li class="rooms__parameters-item">
+                <span class="rooms__label">
+                  Площадь -
+                </span>
+                <span class="rooms__value">
+                  0,63 м2
+                </span>
+              </li>
+              <li class="rooms__parameters-item">
+                <p class="rooms__text">
+                  Оснащение номера
+                </p>
+                <ul class="rooms__img-list">
+                  <li class="rooms__img-item">
+                    <img class="rooms__img" src="img/barrier.svg" alt="ничего" data-title="Пустой номер">
+                  </li>
+                </ul>
+              </li>
+              <li class="rooms__parameters-item">
+                <p class="rooms__text">
+                  Цена за сутки:
+                  <span class="rooms__cost rooms__cost--bold">
+                    100₽
+                  </span>
+                </p>
+              </li>
+            </ul>
+            <button class="rooms__btn">
+              <span class="btn rooms__text">
+                Забронировать
+              </span>
+              <img class="rooms__btn image" src="img/paw2.svg" alt="">
+            </button>
+          </li>
+          <li class="rooms__item">
+            <img class="rooms" src="img/cat5.jpg" alt="кот">
+            <h2 class="rooms__title">
+              Эконом плюс
+            </h2>
+            <ul class="rooms__parameters-list">
+              <li class="rooms__parameters-item">
+                <span class="rooms__label">
+                  Размеры (ШхГхВ) -
+                </span>
+                <span class="rooms__value">
+                  90х100х180 см
+                </span>
+              </li>
+              <li class="rooms__parameters-item">
+                <span class="rooms__label">
+                  Площадь -
+                </span>
+                <span class="rooms__value">
+                  0,90 м2
+                </span>
+              </li>
+              <li class="rooms__parameters-item">
+                <p class="rooms__text">
+                  Оснащение номера
+                </p>
+                <ul class="rooms__img-list">
+                  <li class="rooms__img-item">
+                    <img class="rooms__img" src="img/sunbed.svg" alt="лежак">
+                  </li>
+                  <li class="rooms__img-item">
+                    <img class="rooms__img" src="img/scratchingpost.svg" alt="когтеточка">
+                  </li>
+                </ul>
+              </li>
+              <li class="rooms__parameters-item">
+                <p class="rooms__text">
+                  Цена за сутки:
+                  <span class="rooms__cost rooms__cost--bold">
+                    200₽
+                  </span>
+                </p>
+              </li>
+            </ul>
+            <button class="rooms__btn">
+              <span class="btn rooms__text">
+                Забронировать
+              </span>
+              <img class="rooms__btn image" src="img/paw2.svg" alt="">
+            </button>
+          </li>
+          <li class="rooms__item">
+            <img class="rooms" src="img/cat6.jpg" alt="кот">
+            <h2 class="rooms__title">
+              Комфорт
+            </h2>
+            <ul class="rooms__parameters-list">
+              <li class="rooms__parameters-item">
+                <span class="rooms__label">
+                  Размеры (ШхГхВ) -
+                </span>
+                <span class="rooms__value">
+                  90х100х180 см
+                </span>
+              </li>
+              <li class="rooms__parameters-item">
+                <span class="rooms__label">
+                  Площадь -
+                </span>
+                <span class="rooms__value">
+                  1,13 м2
+                </span>
+              </li>
+              <li class="rooms__parameters-item">
+                <p class="rooms__text">
+                  Оснащение номера
+                </p>
+                <ul class="rooms__img-list">
+                  <li class="rooms__img-item">
+                    <img class="rooms__img" src="img/sunbed.svg" alt="лежак">
+                  </li>
+                  <li class="rooms__img-item">
+                    <img class="rooms__img" src="img/scratchingpost.svg" alt="когтеточка">
+                  </li>
+                  <li class="rooms__img-item">
+                    <img class="rooms__img" src="img/tangle.svg" alt="клубок" data-title="Игровой комплекс">
+                  </li>
+                </ul>
+              </li>
+              <li class="rooms__parameters-item">
+                <p class="rooms__text">
+                  Цена за сутки:
+                  <span class="rooms__cost rooms__cost--bold">
+                    250₽
+                  </span>
+                </p>
+              </li>
+            </ul>
+            <button class="rooms__btn">
+              <span class="btn rooms__text">
+                Забронировать
+              </span>
+              <img class="rooms__btn image" src="img/paw2.svg" alt="">
+            </button>
+          </li>
+          <li class="rooms__item">
+            <img class="rooms" src="img/cat7.jpg" alt="кот">
+            <h2 class="rooms__title">
+              Сьют
+            </h2>
+            <ul class="rooms__parameters-list">
+              <li class="rooms__parameters-item">
+                <span class="rooms__label">
+                  Размеры (ШхГхВ) -
+                </span>
+                <span class="rooms__value">
+                  125х125х180 см
+                </span>
+              </li>
+              <li class="rooms__parameters-item">
+                <span class="rooms__label">
+                  Площадь -
+                </span>
+                <span class="rooms__value">
+                  1,56 м2
+                </span>
+              </li>
+              <li class="rooms__parameters-item">
+                <p class="rooms__text">
+                  Оснащение номера
+                </p>
+                <ul class="rooms__img-list">
+                  <li class="rooms__img-item">
+                    <img class="rooms__img" src="img/sunbed.svg" alt="лежак">
+                  </li>
+                  <li class="rooms__img-item">
+                    <img class="rooms__img" src="img/scratchingpost.svg" alt="когтеточка">
+                  </li>
+                  <li class="rooms__img-item">
+                    <img class="rooms__img" src="img/tangle.svg" alt="клубок" data-title="Игровой комплекс">
+                  </li>
+                </ul>
+              </li>
+              <li class="rooms__parameters-item">
+                <p class="rooms__text">
+                  Цена за сутки:
+                  <span class="rooms__cost rooms__cost--bold">
+                    350₽
+                  </span>
+                </p>
+              </li>
+            </ul>
+            <button class="rooms__btn">
+              <span class="btn rooms__text">
+                Забронировать
+              </span>
+              <img class="rooms__btn image" src="img/paw2.svg" alt="">
+            </button>
+          </li>
+          <li class="rooms__item">
+
+            <img class="rooms" src="img/cat8.jpg" alt="кот">
+            <h2 class="rooms__title">
+              Люкс
+            </h2>
+            <ul class="rooms__parameters-list">
+              <li class="rooms__parameters-item">
+                <span class="rooms__label">
+                  Размеры (ШхГхВ) -
+                </span>
+                <span class="rooms__value">
+                  160х160х180 см
+                </span>
+              </li>
+              <li class="rooms__parameters-item">
+                <span class="rooms__label">
+                  Площадь -
+                </span>
+                <span class="rooms__value">
+                  2,56 м2
+                </span>
+              </li>
+              <li class="rooms__parameters-item">
+                <p class="rooms__text">
+                  Оснащение номера
+                </p>
+                <ul class="rooms__img-list">
+                  <li class="rooms__img-item">
+                    <img class="rooms__img" src="img/sunbed.svg" alt="лежак">
+                  </li>
+                  <li class="rooms__img-item">
+                    <img class="rooms__img" src="img/scratchingpost.svg" alt="когтеточка">
+                  </li>
+                  <li class="rooms__img-item">
+                    <img class="rooms__img" src="img/tangle.svg" alt="клубок" data-title="Игровой комплекс">
+                  </li>
+                  <li class="rooms__img-item">
+                    <img class="rooms__img" src="img/house.svg" alt="домик">
+                  </li>
+                </ul>
+              </li>
+              <li class="rooms__parameters-item">
+                <p class="rooms__text">
+                  Цена за сутки:
+                  <span class="rooms__cost rooms__cost--bold">
+                    500₽
+                  </span>
+                </p>
+              </li>
+            </ul>
+            <button class="rooms__btn">
+              <span class="btn rooms__text">
+                Забронировать
+              </span>
+              <img class="rooms__btn image" src="img/paw2.svg" alt="">
+            </button>
+          </li>
+          <li class="rooms__item">
+            <img class="rooms" src="img/cat9.jpg" alt="кот">
+            <h2 class="rooms__title">
+              Супер-Люкс
+            </h2>
+            <ul class="rooms__parameters-list">
+              <li class="rooms__parameters-item">
+                <span class="rooms__label">
+                  Размеры (ШхГхВ) -
+                </span>
+                <span class="rooms__value">
+                  180х160х180 см
+                </span>
+              </li>
+              <li class="rooms__parameters-item">
+                <span class="rooms__label">
+                  Площадь -
+                </span>
+                <span class="rooms__value">
+                  2,88 м2
+                </span>
+              </li>
+              <li class="rooms__parameters-item">
+                <p class="rooms__text">
+                  Оснащение номера
+                </p>
+                <ul class="rooms__img-list">
+                  <li class="rooms__img-item">
+                    <img class="rooms__img" src="img/sunbed.svg" alt="лежак">
+                  </li>
+                  <li class="rooms__img-item">
+                    <img class="rooms__img" src="img/scratchingpost.svg" alt="когтеточка">
+                  </li>
+                  <li class="rooms__img-item">
+                    <img class="rooms__img" src="img/tangle.svg" alt="клубок" data-title="Игровой комплекс">
+                  </li>
+                  <li class="rooms__img-item">
+                    <img class="rooms__img" src="img/house.svg" alt="домик">
+                  </li>
+                </ul>
+              </li>
+              <li class="rooms__parameters-item">
+                <p class="rooms__text">
+                  Цена за сутки:
+                  <span class="rooms__cost rooms__cost--bold">
+                    600₽
+                  </span>
+                </p>
+              </li>
+            </ul>
+            <button class="rooms__btn">
+              <span class="btn rooms__text">
+                Забронировать
+              </span>
+              <img class="rooms__btn image" src="img/paw2.svg" alt="">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="banner">
+      <h2 class="banner__title">Специальное предложение</h2>
+      <p class="banner__text">
+        <span class="banner__text banner__text--medium banner__text--bold">Каждый 7-й день</span>
+        <span class="banner__text banner__text--big banner__text--bold">бесплатно!</span>
+      </p>
+      <p class="banner__description">Акция действует при размещении в номерах “Люкс” и “Супер-Люкс”</p>
+      <button class="btn banner__btn btn banner__btn--bc-white">
+        <span class="btn banner__text">
+          Забронировать
+        </span>
+        <img class="btn banner__btn-image" src="img/paw.svg" alt="">
+      </button>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <section class="contact">
+      <div class="contact__container">
+        <h2 class="contact__title">
+          Как нас найти
+        </h2>
+        <ul class="contact__list">
+          <li class="contact__item">
+            <h3 class="contact__subitem">
+              Адрес
+            </h3>
+            <p class="contact__text">
+              Санкт-Петербург,
+              ул Большая Конюшенная, д 19
+            </p>
+          </li>
+          <li class="contact__item">
+            <h3 class="contact__subitem">
+              Режим работы
+            </h3>
+            <p class="contact__text">
+              Ежедневно, с 9:00 до 20:00
+            </p>
+          </li>
+          <li class="contact__item">
+            <h3 class="contact__subitem">
+              Телефон
+            </h3>
+            <a class="contact__phone" href="tel:88003335599">
+              <p class="contact__text">
+                8 (800) 333-55-99
+              </p>
+            </a>
+          </li>
+          <li class="contact__item">
+            <h3 class="contact__subitem">
+              E-mail
+            </h3>
+            <a class="contact__email-link" href="mailto:info@cat-hotel.ru">
+              <p class="contact__text">
+                info@cat-hotel.ru
+              </p>
+            </a>
+          </li>
+          <li class="contact__item">
+            <h3 class="contact__subitem">
+              Социальный сети
+            </h3>
+            <ul class="contact__socialNetwork-list">
+              <li class="contact__socialNetwork-item">
+                <a class="contact__facebook-link" href="#">
+                  <img class="contact__img" src="img/Group-47.svg" alt="facebook">
+                </a>
+              </li>
+              <li class="contact__socialNetwork-item">
+                <a class="contact__instagram-link" href="#">
+                  <img class="contact__img" src="img/Group-46.svg" alt="instagram">
+                </a>
+              </li>
+              <li class="contact__socialNetwork-item">
+                <a class="contact__vk-link" href="#">
+                  <img class="contact__img" src="img/vk.svg" alt="vk">
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <img class="contact__map" src="img/map.jpg" alt="map">
+      <img class="contact__marker" src="img/cat3.svg" alt="marker">
+    </section>
+    <a class="page-footer__link-img" href="index.html">
+      <img class="logo" src="img/logo.svg" alt="Логотип">
+    </a>
+    <nav class="main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a href="#" class="main-menu__link">
+            Почему мы?
+          </a>
+        </li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Номера
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Отзывы
+          </a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">
+            Как нас найти
+          </a></li>
+      </ul>
+    </nav>
+    <p class="page-footer__text page-footer__text--gray page-footer__text--small">
+      &copy;2020 Все права защищены
+    </p>
+    <p class="page-footer__text page-footer__text--gray page-footer__text--small">
+      Политика конфиденциальности
+    </p>
+  </footer>
+</body>
+
+</html>
