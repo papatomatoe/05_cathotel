@@ -1,1 +1,212 @@
-/*jjjjjjj*/
+/*это css*/
+@font-face{
+  font-weight: 600;
+  font-family: "Lato";
+font-style: normal;
+src: url("../font/lato-v17-latin-regular.woff2") format("woff2"),
+url("../font/lato-v17-latin-regular.woff") format("woff");
+}
+@font-face{
+  font-weight: 500;
+  font-family: "Lato";
+  font-style: normal;
+  src: url("../font/lato-v17-latin-regular.woff2") format("woff2"),
+  url("../font/lato-v17-latin-regular.woff") format("woff");
+}
+@font-face{
+  font-weight: bold;
+  font-family: "Lato";
+  font-style: normal;
+  src: url("../font/lato-v17-latin-regular.woff2") format("woff2"),
+  url("../font/lato-v17-latin-regular.woff") format("woff");
+}
+@font-face{
+  font-weight: normal;
+  font-family: "Lato";
+  font-style: normal;
+  src: url("../font/lato-v17-latin-regular.woff2") format("woff2"),
+  url("../font/lato-v17-latin-regular.woff") format("woff");
+}
+@font-face{
+  font-weight: bold;
+  font-family: "Rubik";
+  font-style: normal;
+  src: url("../font/rubik-v12-latin-regular.woff2") format("woff2"),
+  url("../font/rubik-v12-latin-regular.woff") format("woff");
+}
+@font-face{
+  font-family: "Rubik";
+font-style: normal;
+font-weight: 500;
+src: url("../font/rubik-v12-latin-regular.woff2") format("woff2"),
+url("../font/rubik-v12-latin-regular.woff") format("woff");
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  font-family: "Lato", Arial, sans-serif;
+  position: relative;
+  min-width: 1336px;
+
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+select {
+  -webkit-appearance: none;
+      -moz-appearance: none;
+}
+.hidden{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+.page-header{
+  width: 1336px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 76px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+}
+.main-menu{
+  position: relative;
+  left: 186px;
+}
+.main-menu__list{
+  position: relative;
+  width: 407px;
+  height: 76px;
+  left: 939px;
+  top: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.logo{
+  position: absolute;
+  width: 67px;
+  height: 75px;
+  left: 172px;
+}
+.main-menu__link{
+  text-decoration: none;
+  color: #1A212F;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  height: 12px;
+}
+.banner{
+  padding: 0;
+  position: relative;
+  top: -14px;
+  min-height: 504px;
+  background-size: cover;
+  background-image: url("../img/cat-bg1.jpg");
+  background-repeat: no-repeat;
+}
+.banner__location--small{
+  font-size: 14px;
+  position: relative;
+  top: 149px;
+  left: 458px;
+}
+.banner__title--big{
+  font-family: "Rubik";
+  font-size: 70px;
+  position: relative;
+  top: 70px;
+  left: 455px;
+}
+.banner__description{
+  font-size: 21px;
+  position: relative;
+  left: 457px;
+}
+.banner__button{
+position:relative;
+width: 206px;
+height: 50px;
+display: block;
+left: 461px;
+bottom: -15px;
+border-radius: 25px;
+background-color: white;
+}
+.banner__text{
+  position:absolute;
+  text-decoration: none;
+  color: black;
+  width: 206px;
+  height: 50px;
+  left: 27px;
+  bottom: -13px;
+
+}
+.banner__image{
+  position: relative;
+  left: 161px;
+  top: 6px;
+}
+.about-us{
+  width: 1175px;
+  position:relative;
+}
+.about-us__title--big{
+  font-size: 37px;
+  position: relative;
+  left: 834px;
+  top: 83px;
+}
+.about-us__list{
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1px;
+  left: 348px;
+  top: 144px;
+
+}
+.about-us__item{
+  position: relative;
+width: 400px;
+}
+/*.up{
+  position: relative;
+  display: flex;
+  left: 350px;
+  top: 144px;
+  margin:0px;
+  padding:0px;
+}
+.down{
+  position: relative;
+  display: flex;
+  left: 350px;
+  top: 234px;
+  margin: 0px;
+  padding: 0px;
+}*/
+.about-us__container{
+  position: relative;
+  top: 1px;
+}
