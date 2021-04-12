@@ -11,7 +11,7 @@
   <header class="page-header">
     <nav class="main-menu">
       <a class="main-menu__link-img" href="index.html">
-        <img class="logo" src="img/logo.svg" alt="Логотип">
+        <img class="logo" src="img/logo.svg" alt="Логотип на сайте 'Котейка'">
       </a>
       <ul class="main-menu__list">
         <li class="main-menu__item"><a href="#" class="main-menu__link">
@@ -30,17 +30,19 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">
-      Страница каталога на сайте "котейка"
+    <h1 class="visually-hidden">
+      Страница каталога на сайте "Котейка"
     </h1>
+    <p class="page-main__text">
+      Наши номера
+    </p>
     <section class="filter">
-      <h2 class="filter__text">
-        Наши номера
+      <h2 class="filter__title">
+        Фильтр
       </h2>
-      <form class="filter__form">
-
+      <form class="filter__form" method="GET">
         <fieldset class="filter__fieldset">
-          <legend class="filter__cost">
+          <legend class="filter__legend">
             Цена за сутки,₽
           </legend>
           <label>
@@ -51,7 +53,7 @@
           </label>
         </fieldset>
         <fieldset class="filter__fieldset">
-          <legend class="filter__title-space">
+          <legend class="filter__legend">
             Площадь
           </legend>
           <ul class="filter__number-list">
@@ -94,7 +96,7 @@
           </ul>
         </fieldset>
         <fieldset class="filter__fieldset">
-          <legend class="filter__title-equipment">
+          <legend class="filter__legend">
             Оснащение номера
           </legend>
           <ul class="filter__text-list">
@@ -130,11 +132,25 @@
             </li>
           </ul>
         </fieldset>
-        <button class="filter__btn" type="reset">
+        <button class="filter__btn filter__btn--yellow-radius" type="reset">
           Сбросить фильтр
         </button>
       </form>
     </section>
+    <select class="sorting" name="sorting">
+      <option value="1">
+        По площади &uarr;
+      </option>
+      <option value="2">
+        По площади &darr;
+      </option>
+      <option value="3">
+        По цене &uarr;
+      </option>
+      <option value="4">
+        По цене &darr;
+      </option>
+    </select>
     <section class="rooms">
       <h2 class="rooms__title">
         Комнаты
@@ -142,10 +158,10 @@
       <div class="rooms__container">
         <ul class="rooms__list">
           <li class="rooms__item">
-            <img class="rooms" src="img/cat4.jpg" alt="кот">
-            <h2 class="rooms__title">
+            <img class="rooms__photo" src="img/cat4.jpg" alt="кот в номере эконом">
+            <h3 class="rooms__title">
               Эконом
-            </h2>
+            </h3>
             <ul class="rooms__parameters-list">
               <li class="rooms__parameters-item">
                 <span class="rooms__label">
@@ -169,7 +185,7 @@
                 </p>
                 <ul class="rooms__img-list">
                   <li class="rooms__img-item">
-                    <img class="rooms__img" src="img/barrier.svg" alt="ничего" data-title="Пустой номер">
+                    <img class="rooms__img" src="img/barrier.svg" alt="пустой номер" data-title="Пустой номер">
                   </li>
                 </ul>
               </li>
@@ -182,18 +198,18 @@
                 </p>
               </li>
             </ul>
-            <button class="rooms__btn">
-              <span class="btn rooms__text">
+            <a class="rooms__link" href="#">
+              <span>
                 Забронировать
               </span>
-              <img class="rooms__btn image" src="img/paw2.svg" alt="">
-            </button>
+              <img src="img/paw2.svg" alt="">
+            </a>
           </li>
           <li class="rooms__item">
-            <img class="rooms" src="img/cat5.jpg" alt="кот">
-            <h2 class="rooms__title">
+            <img class="rooms__photo" src="img/cat5.jpg" alt="кот в номере эконом плюс">
+            <h3 class="rooms__title">
               Эконом плюс
-            </h2>
+            </h3>
             <ul class="rooms__parameters-list">
               <li class="rooms__parameters-item">
                 <span class="rooms__label">
@@ -233,18 +249,18 @@
                 </p>
               </li>
             </ul>
-            <button class="rooms__btn">
-              <span class="btn rooms__text">
+            <a class="rooms__link" href="#">
+              <span>
                 Забронировать
               </span>
-              <img class="rooms__btn image" src="img/paw2.svg" alt="">
-            </button>
+              <img src="img/paw2.svg" alt="">
+            </a>
           </li>
           <li class="rooms__item">
-            <img class="rooms" src="img/cat6.jpg" alt="кот">
-            <h2 class="rooms__title">
+            <img class="rooms__photo" src="img/cat6.jpg" alt="кот в номере комфорт">
+            <h3 class="rooms__title">
               Комфорт
-            </h2>
+            </h3>
             <ul class="rooms__parameters-list">
               <li class="rooms__parameters-item">
                 <span class="rooms__label">
@@ -287,18 +303,18 @@
                 </p>
               </li>
             </ul>
-            <button class="rooms__btn">
-              <span class="btn rooms__text">
+            <a class="rooms__link" href="#">
+              <span>
                 Забронировать
               </span>
-              <img class="rooms__btn image" src="img/paw2.svg" alt="">
-            </button>
+              <img src="img/paw2.svg" alt="">
+            </a>
           </li>
           <li class="rooms__item">
-            <img class="rooms" src="img/cat7.jpg" alt="кот">
-            <h2 class="rooms__title">
+            <img class="rooms__photo" src="img/cat7.jpg" alt="кот в номере сьют">
+            <h3 class="rooms__title">
               Сьют
-            </h2>
+            </h3>
             <ul class="rooms__parameters-list">
               <li class="rooms__parameters-item">
                 <span class="rooms__label">
@@ -341,19 +357,18 @@
                 </p>
               </li>
             </ul>
-            <button class="rooms__btn">
-              <span class="btn rooms__text">
+            <a class="rooms__link" href="#">
+              <span>
                 Забронировать
               </span>
-              <img class="rooms__btn image" src="img/paw2.svg" alt="">
-            </button>
+              <img src="img/paw2.svg" alt="">
+            </a>
           </li>
           <li class="rooms__item">
-
-            <img class="rooms" src="img/cat8.jpg" alt="кот">
-            <h2 class="rooms__title">
+            <img class="rooms__photo" src="img/cat8.jpg" alt="кот в номере люкс">
+            <h3 class="rooms__title">
               Люкс
-            </h2>
+            </h3>
             <ul class="rooms__parameters-list">
               <li class="rooms__parameters-item">
                 <span class="rooms__label">
@@ -399,18 +414,18 @@
                 </p>
               </li>
             </ul>
-            <button class="rooms__btn">
-              <span class="btn rooms__text">
+            <a class="rooms__link" href="#">
+              <span>
                 Забронировать
               </span>
-              <img class="rooms__btn image" src="img/paw2.svg" alt="">
-            </button>
+              <img src="img/paw2.svg" alt="">
+            </a>
           </li>
           <li class="rooms__item">
-            <img class="rooms" src="img/cat9.jpg" alt="кот">
-            <h2 class="rooms__title">
+            <img class="rooms__photo" src="img/cat9.jpg" alt="кот в номере супер-люкс">
+            <h3 class="rooms__title">
               Супер-Люкс
-            </h2>
+            </h3>
             <ul class="rooms__parameters-list">
               <li class="rooms__parameters-item">
                 <span class="rooms__label">
@@ -456,12 +471,12 @@
                 </p>
               </li>
             </ul>
-            <button class="rooms__btn">
-              <span class="btn rooms__text">
+            <a class="rooms__link" href="super-luks.html">
+              <span>
                 Забронировать
               </span>
-              <img class="rooms__btn image" src="img/paw2.svg" alt="">
-            </button>
+              <img src="img/paw2.svg" alt="">
+            </a>
           </li>
         </ul>
       </div>
@@ -550,10 +565,9 @@
         </ul>
       </div>
       <img class="contact__map" src="img/map.jpg" alt="map">
-      <img class="contact__marker" src="img/cat3.svg" alt="marker">
     </section>
     <a class="page-footer__link-img" href="index.html">
-      <img class="logo" src="img/logo.svg" alt="Логотип">
+      <img class="logo" src="img/logo.svg" alt="Логотип сайта 'Котейка'">
     </a>
     <nav class="main-menu">
       <ul class="main-menu__list">
