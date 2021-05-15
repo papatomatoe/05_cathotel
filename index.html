@@ -11,31 +11,34 @@
 
 <body>
   <header class="page-header">
-    <nav class="main-menu">
-      <a class="main-menu__link-img">
-        <img class="logo" src="img/logo.svg" alt="Логотип сайта 'Котейка'">
-      </a>
-      <ul class="main-menu__list">
-        <li class="main-menu__item"><a href="#" class="main-menu__link">
-            Почему мы?
-          </a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">
-            Номера
-          </a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#">
-            Отзывы
-          </a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#">
-            Как нас найти
-          </a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="main-menu">
+        <a class="main-menu__link-img">
+          <img class="logo" src="img/logo.svg" alt="Логотип сайта 'Котейка'">
+        </a>
+        <ul class="main-menu__list">
+          <li class="main-menu__item"><a href="#about-us" class="main-menu__link">
+              Почему мы?
+            </a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#rooms">
+              Номера
+            </a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#comments">
+              Отзывы
+            </a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#contact">
+              Как нас найти
+            </a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">
       главная страница сайта "Котейка"
     </h1>
     <section class="banner">
+      <div class="container">
       <h2 class="visually-hidden">
         банер на сайте "Котейка"
       </h2>
@@ -52,10 +55,11 @@
         <span class="banner__text">
           Забронировать
         </span>
-        <img class="banner__image" src="img/paw.svg" alt="">
       </a>
+    </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about-us">
+      <div class="container">
       <h2 class="about-us__title about-us__title--big">
         Почему мы?
       </h2>
@@ -131,9 +135,11 @@
           </div>
         </li>
       </ul>
+    </div>
     </section>
     <section class="rooms">
-      <h2 class="rooms__title rooms__title--big">
+      <div class="container">
+      <h2 class="rooms__title rooms__title--big" id="rooms">
         Номера
       </h2>
       <div class="rooms__container">
@@ -142,13 +148,28 @@
         </h3>
         <ul class="rooms__list">
           <li class="rooms__item">
-            Площадь - 0,90 м2
+            <span class="rooms__label">
+              Площадь -
+            </span>
+            <span class="rooms__value">
+              0,90 м2
+            </span>
           </li>
           <li class="rooms__item">
-            Размеры (ШхГхВ) — 90х100х180 см
+            <span class="rooms__label">
+              Размеры (ШхГхВ) —
+            </span>
+            <span class="rooms__value">
+              90х100х180 см
+            </span>
           </li>
           <li class="rooms__item">
-            Цена за сутки: 200₽
+            <span class="rooms__label">
+              Цена за сутки:
+            </span>
+            <span class="rooms__value">
+              200₽
+            </span>
           </li>
         </ul>
         <a class="rooms__link" href="#">
@@ -165,26 +186,27 @@
       <input class="rooms__radio" type="radio" name="item" id="radio-3">
       <label class="rooms__control" for="radio-3"></label>
       <div class="arrow">
-        <button class="arrow arrow--left">
+        <button class="arrow arrow--left" type="button">
         </button>
-        <button class="arrow arrow--right">
+        <button class="arrow arrow--right" type="button">
         </button>
       </div>
+    </div>
     </section>
     <section class="comments">
-      <h2 class="comments__title comments__title--big">
+      <div class="container">
+      <h2 class="comments__title comments__title--big" id="comments">
         Отзывы
       </h2>
       <ul class="comments__list">
         <li class="comments__item">
+          <p class="comments__text">
+            Первый раз пришлось оставить нашего котика 
+            в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца,
+            рассказывала, как он себя чувствует. 
+            И мы и котик остались очень довольны!
+          </p>
           <div class="comments__container">
-            <img class="comments__img" src="img/symbol.svg" alt="">
-            <p class="comments__text">
-              Первый раз пришлось оставить нашего котика
-              в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца,
-              рассказывала, как он себя чувствует.
-              И мы и котик остались очень довольны!
-            </p>
             <p class="comments__sender comments__sender--small comments__sender--gray">
               Валерия Гришаева
             </p>
@@ -194,28 +216,26 @@
           </div>
         </li>
         <li class="comments__item">
+          <p class="comments__text">
+            Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В
+            “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться
+            еще.
+          </p>
           <div class="comments__container">
-            <img class="comments__img" src="img/symbol.svg" alt="">
-            <p class="comments__text">
-              Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В
-              “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться
-              еще.
-            </p>
             <p class="comments__sender comments__sender--small comments__sender--gray">
               Екатерина Минаева
             </p>
             <p class="comments__data comments__data--small comments__data--gray">
-              <time datetime="2020-03-10">10 марта, >2020</time>
+              <time datetime="2020-03-10">10 марта, 2020</time>
             </p>
           </div>
         </li>
         <li class="comments__item">
+          <p class="comments__text">
+            Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и
+            “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.
+          </p>
           <div class="comments__container">
-            <img class="comments__img" src="img/symbol.svg" alt="">
-            <p class="comments__text">
-              Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и
-              “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.
-            </p>
             <p class="comments__sender comments__sender--small comments__sender--gray">
               Павел Нечаев
             </p>
@@ -225,21 +245,24 @@
           </div>
         </li>
       </ul>
-      <input class="comments__switch" type="radio">
-      <input class="comments__switch" type="radio">
-      <input class="comments__switch" type="radio">
-      <div class="arrow">
-        <a class="arrow arrow--left" href="#">
-          left
-        </a>
-        <a class="arrow arrow-right" href="#">
-          right
-        </a>
+      <input class="comments__switch" type="radio" id="radio-4" name="switch">
+      <label class="comments__control" for="radio-4"></label>
+      <input class="comments__switch" type="radio" id="radio-5" name="switch">
+      <label class="comments__control" for="radio-5"></label>
+      <input class="comments__switch" type="radio" id="radio-6" name="switch">
+      <label class="comments__control" for="radio-6"></label>
+      <div class="comments__arrow">
+        <button class="comments__arrow comments__arrow--left" href="#">
+        </button>
+        <button class="comments__arrow comments__arrow-right" href="#">
+        </button>
       </div>
+    </div>
     </section>
   </main>
   <footer class="page-footer">
-    <section class="contact">
+    <section class="contact" id="contact">
+      <div class="container">
       <div class="contact__container">
         <h2 class="contact__title">
           Как нас найти
@@ -250,7 +273,7 @@
               Адрес
             </h3>
             <p class="contact__text">
-              Санкт-Петербург,
+              Санкт-Петербург,<br>
               ул Большая Конюшенная, д 19
             </p>
           </li>
@@ -289,12 +312,12 @@
             <ul class="contact__socialNetwork-list">
               <li class="contact__socialNetwork-item">
                 <a class="contact__facebook-link" href="#">
-                  <img class="contact__img" src="img/Group-47.svg" alt="facebook">
+                  <img class="contact__img" src="img/facebook.svg" alt="facebook">
                 </a>
               </li>
               <li class="contact__socialNetwork-item">
                 <a class="contact__instagram-link" href="#">
-                  <img class="contact__img" src="img/Group-46.svg" alt="instagram">
+                  <img class="contact__img" src="img/instagram.svg" alt="instagram">
                 </a>
               </li>
               <li class="contact__socialNetwork-item">
@@ -305,40 +328,43 @@
             </ul>
           </li>
         </ul>
-      </div>
-      <img class="contact__map" src="img/map.jpg" alt="map">
+          </div>
+        <img class="contact__map" src="img/map.jpg" alt="map">
+    </div>
     </section>
-    <a class="page-footer__link-img">
-      <img class="logo" src="img/logo.svg" alt="Логотип сайта 'Котейка'">
-    </a>
-    <nav class="main-menu">
-      <ul class="main-menu__list">
+    <div class="container">
+    <nav class="footer__main-menu">
+      <a class="page-footer__link-img">
+        <img class="footer__logo" src="img/logo.svg" alt="Логотип сайта 'Котейка'">
+      </a>
+      <ul class="footer__list">
         <li class="main-menu__item">
-          <a href="#" class="main-menu__link">
+          <a href="#" class="footer__link">
             Почему мы?
           </a>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link" href="catalog.html">
+          <a class="footer__link" href="catalog.html">
             Номера
           </a>
         </li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#">
+        <li class="main-menu__item"><a class="footer__link" href="#">
             Отзывы
           </a></li>
         <li class="main-menu__item">
-          <a class="main-menu__link" href="#">
+          <a class="footer__link" href="#">
             Как нас найти
           </a>
         </li>
       </ul>
     </nav>
-    <p class="page-footer__text page-footer__text--gray page-footer__text--small">
+    <p class="page-footer__text page-footer__text--rights">
       &copy;2020 Все права защищены
     </p>
-    <p class="page-footer__text page-footer__text--gray page-footer__text--small">
+    <p class="page-footer__text page-footer__text--privacy">
       Политика конфиденциальности
     </p>
+  </div>
   </footer>
 </body>
 
